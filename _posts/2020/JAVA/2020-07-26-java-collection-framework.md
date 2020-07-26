@@ -17,7 +17,7 @@ categories:
 
 ![](https://raw.githubusercontent.com/stothey0804/stothey0804.github.io/master/_posts/2020/JAVA/Collection_interfaces.png)
 > JAVA 프레임워크에서 제공하는 API
-> 출처 https://www.ntu.edu.sg/home/ehchua/programming/java/J5c_Collection.html#zz-2.
+> <font size="2">출처 https://www.ntu.edu.sg/home/ehchua/programming/java/J5c_Collection.html#zz-2.</font>
 
 
 
@@ -67,7 +67,7 @@ categories:
 
 
 > Colletion 인터페이스
->https://docs.oracle.com/javase/10/docs/api/java/util/Collection.html
+> <font size="2">https://docs.oracle.com/javase/10/docs/api/java/util/Collection.html</font>
 
 > Map 인터페이스
->https://docs.oracle.com/javase/10/docs/api/java/util/Map.html
+> <font size="2">https://docs.oracle.com/javase/10/docs/api/java/util/Map.html</font>
