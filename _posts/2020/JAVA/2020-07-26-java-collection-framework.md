@@ -15,9 +15,9 @@ categories:
 아래는 JAVA에서 제공하는 컬렉션 계층구조이다.
 
 
-![](Collection_interfaces.png)
+![](https://raw.githubusercontent.com/stothey0804/stothey0804.github.io/master/_posts/2020/JAVA/Collection_interfaces.png)
 > JAVA 프레임워크에서 제공하는 API
-> 출처: https://www.ntu.edu.sg/home/ehchua/programming/java/J5c_Collection.html#zz-2.
+> 출처 https://www.ntu.edu.sg/home/ehchua/programming/java/J5c_Collection.html#zz-2.
 
 
 
@@ -25,9 +25,9 @@ categories:
 컬렉션은 특징에 따라 세 가지로 분류할 수 있다고 배웠다.
 
 
-### 1. List
-### 2. Set
-### 3. Map
+1. List
+2. Set
+3. Map
 
 
 참고로 List, Set 은 Collection인터페이스의 하위 인터페이스지만,  Map은 Collection의 하위 인터페이스가 아니다.
