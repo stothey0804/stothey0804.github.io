@@ -1,6 +1,7 @@
 ---
 title: JavaScript - 변수, 연산자, 타입
-Categories: Javascript
+categories:
+- Javascript
 ---
 
 JavaScript(JS)는 객체 기반의 스크립트 프로그래밍 언어다.
