@@ -79,7 +79,8 @@ function letTest() {
 ##### (1) || (or) 연산자
 값이 없으면 오른쪽 값을 할당한다.
 
-```var name = "sykim";
+```
+var name = "sykim";
 var result = name || "defaultname";
 console.log(result) // sykim
 var name = "";
@@ -96,6 +97,7 @@ document.write(result);
 
 자바스크립트는 ==로 비교하면, 
 암묵적으로 타입을 바꾸어 비교하므로 =(equal)을 3개 넣어서 비교한다.
+
 ```
 0 == false // true
 "" == false // true
@@ -110,7 +112,9 @@ null == undefined // true
 
 ### 3. Type의 종류
 
-```undefined, null, boolean, number, string, object, function, araay, Date, RegExp```
+```
+undefined, null, boolean, number, string, object, function, araay, Date, RegExp
+```
 
 자바스크립트는 실행할 때 타입이 결정되는 언어로, 느슨한 언어(loosely typed language)라고 불린다.
 그래서 다른 언어와 다르게 변수에 포함할 데이터 타입을 지정하지 않아도 된다.
