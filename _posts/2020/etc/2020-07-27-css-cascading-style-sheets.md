@@ -12,12 +12,12 @@ CSS (Cascading Style Sheets)란,
 ## CSS의 선언
 ### 1. External
 
-```
+```html
 <link rel='stylesheet' type='text/css' href='mystyle.css'>
 ```
 
 ### 2. Internal
-```
+```html
 <head>
 	<style>
 		body{
@@ -28,7 +28,7 @@ CSS (Cascading Style Sheets)란,
 ```
 ### 3. inline
 
-```
+```html
 <body style='background-color : green'>
 	...
 </body>
@@ -43,7 +43,7 @@ CSS (Cascading Style Sheets)란,
 선택자는 특정 HTML 태그를 선택할 떄 사용하는 기능이다.
 선택자 {스타일 속성: 스타일 값;} 형태로 선언한다.
 
-```
+```css
 h1{ // 선택자
 	color: red; // 속성 : 값;
 	background-color: orange;
@@ -74,7 +74,7 @@ h1{ // 선택자
 	|선택자\[속성]|특정한 속성이 있는 태그를 선택|
 	|선택자\[속성=값]|특정한 속성 안의 값이 특정값과 같은 문서 객체 선택|
 
-	```
+	```html
 	<head>
 		<title>CSS3 Selector</title>
 		<style>
@@ -104,7 +104,7 @@ h1{ // 선택자
 * **선택자A 선택자B**
 	* 선택자A의 ___모든___ 하위 선택자B를 선택
 
-	```
+	```html
 	<head>
 		<title>CSS3 Selector</title>
 		<style>
@@ -132,7 +132,7 @@ h1{ // 선택자
 * **선택자A > 선택자B**
 	* 선택자A의 바로 아래에 있는 하위 선택자 B를 선택
 
-	```
+	```html
 	<head>
 		<title>CSS3 Selector</title>
 		<style>
@@ -163,7 +163,7 @@ h1{ // 선택자
 * **선택자A ~ 선택자B**
 	* 뒤에 위치하는 모든  형제 선택자
 
-	```
+	```html
 	<head>
 		<title>CSS3 Selector</title>
 		<style>
@@ -193,7 +193,7 @@ h1{ // 선택자
 	* :enabled - 사용 가능한 input
 	* :disabled - 사용 불가능한 input
 
-	```
+	```html
 	<head>
 		<title>CSS3 Selector</title>
 		<style>
@@ -233,7 +233,7 @@ h1{ // 선택자
 	* :nth-child(수열) - 형제 관계중 앞에서 수열번째
 	* :nth-last-child(수열) - 형제 관계중 뒤에서 수열번째
 
-	```
+	```html
 	<head>
 		<title>CSS3 Selector</title>
 		<style>
@@ -266,7 +266,7 @@ h1{ // 선택자
 	* :nth-of-type(수열)
 	* :nth-last-of-type
 
-	```
+	```html
 	<head>
 	<style>
 		/*div p:first-child { color:red; } */  /* div하위에 p가 첫번째로 존재하지 않아 적용X */
@@ -311,11 +311,11 @@ cascading은 폭포가 내려오는 모양처럼 단계적이라는 의미이며
 
  * **important** 가 선언되면 가장 높은 우선권을 갖는다.
 
-```
+```css
 p#page { color: red !important; }
 ```
 
-```
+```html
 <p id="page" style="color:blue">Lorem impusm dolor sit.</p> // red 적용
 ```
 
