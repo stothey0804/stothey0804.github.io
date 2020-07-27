@@ -7,6 +7,15 @@ categories:
 toc: true
 ---
 
+---
+title: CSS - 개념, 선택자
+tags:
+- css
+categories:
+- etc
+toc: true
+---
+
 CSS (Cascading Style Sheets)란,
 
 브라우저에서 웹페이지의 외형을 결정하는 선언형 언어로, 선택한 요소에 CSS 스타일 선언을 적용해 화면에 표현한다.
@@ -242,47 +251,39 @@ tag와 id가 아닌 것을 그룹핑할 때 (해당 클래스를 가진 태그�
 * **형태구조 선택자**
 
 	:first-of-type
-
 	:last-of-type
-
 	:nth-of-type(수열)
-
 	:nth-last-of-type
-
-**[참고]** 일반 구조 선택자는 순서를 정확히 해야하지만, 형태구조 선택자는 type을 만나는 순서대로 적용된다.
-{: .notice}
-
 
 	```
 	<head>
 	<style>
-	  /*div p:first-child { color:red; } */  /* div하위에 p가 첫번째로 존재하지 않아 적용X */
-	  div p:first-of-type { color:red; }  /* type만으로 찾기 때문에 적용가능 */
+		/*div p:first-child { color:red; } */  /* div하위에 p가 첫번째로 존재하지 않아 적용X */
+		div p:first-of-type { color:red; }  /* type만으로 찾기 때문에 적용가능 */
 	</style>
 	</head>
 	<body>
-	  <div>
-	    <div>text1</div>
-	    <p>text2</p>
-	    <p>text3</p>
-	  </div>
+		<div>
+			<div>text1</div>
+			<p>text2</p>
+			<p>text3</p>
+		</div>
 	</body>
-	```	
+	```
 
+**[참고]** 일반 구조 선택자는 순서를 정확히 해야하지만, 형태구조 선택자는 type을 만나는 순서대로 적용된다.
+{: .notice}
 
 * 그 외 선택자
 
 	::first-letter - 첫번째 글자
-
 	::first-line - 첫번째 줄
-
 	a:visited - 방문한 적 있는 링크
-
 	:not - 해당 선택자가 아닌 것에 적용
 
 
 >선택자 연습 사이트
-> : <h:ttp://flukeout.github.io/>
+> : <http://flukeout.github.io/>
 
 - - -
 ## CSS 적용 우선순위
@@ -305,9 +306,14 @@ p#page { color: red !important; }
 <p id="page" style="color:blue">Lorem impusm dolor sit.</p> // red 적용
 ```
 
-	* 출처
+
+* **출처**
+
 	제작자, 사용자, 사용자 에이전트(user agent)로 구분하며, 현재는 사용자 작성 스타일을 지원하지 않는 추세이므로 생략.
 	제작자 지정 스타일 > 사용자 에이전트(브라우저 내장 CSS)
+
+<br>
+
 
 ##### 2. 구체성
 
@@ -344,6 +350,8 @@ div#page { ... }  /* 0,1,0,1 */
 ##### 3. 선언 순서
 
  뒤에 선언된 규칙일 수록 우선한다.
+
+<br>
 
  > edwith 부스트코스
  > : <https://www.edwith.org/boostcourse-ui/lecture/33517/>
