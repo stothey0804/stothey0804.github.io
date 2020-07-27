@@ -288,11 +288,10 @@ h1{ // 선택자
 <br>
 
 * 그 외 선택자
-
-	::first-letter - 첫번째 글자
-	::first-line - 첫번째 줄
-	a:visited - 방문한 적 있는 링크
-	:not - 해당 선택자가 아닌 것에 적용
+	* ::first-letter - 첫번째 글자
+	* ::first-line - 첫번째 줄
+	* a:visited - 방문한 적 있는 링크
+	* :not - 해당 선택자가 아닌 것에 적용
 
 <br>
 
