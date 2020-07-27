@@ -253,7 +253,7 @@ tag와 id가 아닌 것을 그룹핑할 때 (해당 클래스를 가진 태그�
 {: .notice}
 
 
-	```
+```
 	<head>
 	<style>
 	  /*div p:first-child { color:red; } */  /* div하위에 p가 첫번째로 존재하지 않아 적용X */
@@ -267,7 +267,7 @@ tag와 id가 아닌 것을 그룹핑할 때 (해당 클래스를 가진 태그�
 	    <p>text3</p>
 	  </div>
 	</body>
-	```
+```
 
 
 * 그 외 선택자
