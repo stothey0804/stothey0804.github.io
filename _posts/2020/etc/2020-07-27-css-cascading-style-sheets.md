@@ -249,11 +249,12 @@ tag와 id가 아닌 것을 그룹핑할 때 (해당 클래스를 가진 태그�
 **[참고]** 일반 구조 선택자는 순서를 정확히 해야하지만, 형태구조 선택자는 type을 만나는 순서대로 적용된다.
 {: .notice}
 
+
 	```
 	<head>
 	<style>
 	  /*div p:first-child { color:red; } */  /* div하위에 p가 첫번째로 존재하지 않아 적용X */
-	  div p:first-of-type { color:red; }  /* type만드로 찾기 때문에 적용가능 */
+	  div p:first-of-type { color:red; }  /* type만으로 찾기 때문에 적용가능 */
 	</style>
 	</head>
 	<body>
@@ -264,6 +265,7 @@ tag와 id가 아닌 것을 그룹핑할 때 (해당 클래스를 가진 태그�
 	  </div>
 	</body>
 	```
+
 
 * 그 외 선택자
 
