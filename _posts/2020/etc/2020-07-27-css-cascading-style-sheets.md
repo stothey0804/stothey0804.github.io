@@ -241,19 +241,19 @@ tag와 id가 아닌 것을 그룹핑할 때 (해당 클래스를 가진 태그�
 
 * **형태구조 선택자**
 
-:first-of-type
+	:first-of-type
 
-:last-of-type
+	:last-of-type
 
-:nth-of-type(수열)
+	:nth-of-type(수열)
 
-:nth-last-of-type
+	:nth-last-of-type
 
 **[참고]** 일반 구조 선택자는 순서를 정확히 해야하지만, 형태구조 선택자는 type을 만나는 순서대로 적용된다.
 {: .notice}
 
 
-```
+	```
 	<head>
 	<style>
 	  /*div p:first-child { color:red; } */  /* div하위에 p가 첫번째로 존재하지 않아 적용X */
@@ -267,15 +267,18 @@ tag와 id가 아닌 것을 그룹핑할 때 (해당 클래스를 가진 태그�
 	    <p>text3</p>
 	  </div>
 	</body>
-```
+	```	
 
 
 * 그 외 선택자
 
-::first-letter - 첫번째 글자
-::first-line - 첫번째 줄
-a:visited - 방문한 적 있는 링크
-:not - 해당 선택자가 아닌 것에 적용
+	::first-letter - 첫번째 글자
+
+	::first-line - 첫번째 줄
+
+	a:visited - 방문한 적 있는 링크
+
+	:not - 해당 선택자가 아닌 것에 적용
 
 
 >선택자 연습 사이트
