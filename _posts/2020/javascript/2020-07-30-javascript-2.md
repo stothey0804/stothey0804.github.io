@@ -17,14 +17,18 @@ javascript는 실행될 때 타입이 결정되는 언어이므로, 정확한 �
   * 10진수, 16진수, 8진수, 2진수 표현
 
 * 부동소수점
-  * [(+|-)][digits][.digits][(E|e)[(+|-)]digits]
+  ```
+  [(+|-)][digits][.digits][(E|e)[(+|-)]digits]
+  ```
 
 * boolean
-  * ture | false
+  ```
+  ture | false
+  ```
 
 * String
   * '또는 "로 묶인 0개이상의 문자
-  ex
+  [ex]
   ```js
   "foo"
   'bar'
@@ -81,7 +85,7 @@ var x = "John Doe";
 var x = 'John Doe';
 ```
 
-### method
+### methods
 
 * length : 배열의 길이 리턴 (메서드는 아니고 프로퍼티이다.)
 
@@ -205,7 +209,7 @@ var cars = ["Saab", "Volvo", "BMW"];
 var cars = new Array("Saab", "Volvo", "BMW");
 ```
 
-### method
+### methods
 
 * toString() : array를 ,로 구분된 string으로 변환한다.
 
@@ -306,6 +310,88 @@ var citrus = fruits.slice(1,3); // Orange, Lemon
 var points = [40, 100, 1, 5, 25, 10];
 points.sort(function(a, b){return a - b});
 
+```
+
+### iteration methods
+
+* forEach() : 배열의 각 요소에 따라 파라미터에 해당하는 함수(콜백함수)를 실행한다.
+```js
+var txt = "";
+var numbers = [45, 4, 9, 16, 25];
+numbers.forEach(myFunction);
+
+function myFunction(value, index, array) {
+  txt = txt + value + "<br>";
+}
+// txt 에 배열의 모든 요소를 저장.
+```
+
+**[참고]** array의 iteration 메서드를 통해 부르는 function은 value, index, array(해당 array 자신)을 arguments로 취한다. 위 예제의 경우 value만 사용하고 있는데, 이 경우 myFunciton의 파라미터 값으로 value만 받아서 사용해도 된다.
+{: .notice--info}
+
+
+* map() : 각 배열 요소에 function을 수행하여 새 배열을 만들며, _값이 없는 배열 요소에 대한 함수는 실행하지 않는다._ array의 _원본을 변경하지 않고_ 새로운 array를 생성한다.
+```js
+var numbers1 = [45, 4, 9, 16, 25];
+var numbers2 = numbers1.map(myFunction);
+
+function myFunction(value, index, array) {
+  return value * 2;
+}
+```
+
+* filter() : 각 배열 요소에 function의 조건을 만족하는 요소로 이루어진 새 배열을 만든다.
+```js
+var numbers = [45, 4, 9, 16, 25];
+var over18 = numbers.filter(myFunction);
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+```
+
+
+* reduce() : 배열 요소에 대해 함수를 실행하여 단일 값을 생성한. 원본 값을 변경하지 않는다. _배열의 합을 구할때 사용._ 좌->우로 실행되며, reduceRight() 메서드는 마지막 인덱스부터 시작한다.
+```js
+var numbers1 = [45, 4, 9, 16, 25];
+var sum = numbers1.reduce(myFunction); // 99
+
+function myFunction(total, value, index, array) {
+  return total + value;
+}
+```
+**[참고]** total은 초기값 || 이전에 반환된 값
+{: .notice--info}
+
+
+
+* every() : 배열의 모든 요소가 지정조건을 통과하는지 체크한다.
+```js
+var numbers = [45, 4, 9, 16, 25];
+var allOver18 = numbers.every(myFunction);  // false
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+```
+
+* find() / findInder() : 해당 조건을 통과하는 요소의 값/인덱스를 반환한다. (해당하는 요소가 여러개일 경우, 가장 먼저 만족하는 요소를 리턴)
+```js
+var numbers = [4, 9, 16, 25, 29];
+var first = numbers.find(myFunction); // 25
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+```
+
+```js
+var numbers = [4, 9, 16, 25, 29];
+var first = numbers.findIndex(myFunction); // 3
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
 ```
 
 

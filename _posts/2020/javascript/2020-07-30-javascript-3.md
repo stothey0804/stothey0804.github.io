@@ -133,4 +133,79 @@ func(1,2,3,4,5,6,7,8,9,10); // 55
 
 ### 콜백함수
 
+콜백함수는 파라미터로 함수를 받는 함수이다. 콜백함수 형태는 비동기 처리와 관련이 있는데 비동기 및 관련 내용은 추후 ajax 공부를 진행하면서 작성하려고 한다.
+
+[ex]
+```js
+function calc(num1, num2, operator){
+    console.log(operator(num1, num2));
+}
+
+function add(num1, num2){ return num1 + num2; }
+function sub(num1, num2){ return num1 - num2; }
+function multi(num1, num2){ return num1 * num2; }
+function div(num1, num2) {return num1 / num2; }
+
+calc(4,2,add); // 6
+calc(5,2,sub); // 3
+calc(4,2,multi); // 8
+calc(4,2,div); // 2
+```
+
+
+
 ### 클로저
+
+외부함수가 감싸고 있는 내부함수가 외부함수의 context에 접근할 수 있는 것을 말한다.
+
+```js
+function outter(){  // 외부함수
+    var title = 'coding everybody';
+    function inner(){ // 내부함수
+        alert(title);
+    }
+    inner();
+}
+outter(); // coding everybody 출력
+```
+
+#### 캡슐화
+
+자바스크립트는 private 접근자를 지원하지 않지만, 아래 예제처럼 클로저를 이용하면 구현이 가능하다.
+또, 외부함수의 지역변수를 사용하는 내부함수가 소멸될때까지 사라지지 않는 특성이 있다.
+
+
+```js
+var counter = (function() {
+var privateCounter = 0;
+function changeBy(val) {
+    privateCounter += val;
+    }
+    return {
+        increment: function() {
+            changeBy(1);
+        },
+        decrement: function() {
+            changeBy(-1);
+        },
+        value: function() {
+            return privateCounter;
+        }
+    };   
+})();
+
+console.log(counter.value()); // logs 0
+counter.increment();
+counter.increment();
+console.log(counter.value()); // logs 2
+counter.decrement();
+console.log(counter.value()); // logs 1
+```
+
+
+
+> 참고 - 생활코딩 Javascript
+> : <https://opentutorials.org/course/743/6544>
+
+> MDN - 클로저
+> : <https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Closures>
