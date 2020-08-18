@@ -1,7 +1,7 @@
 ---
 title: javascript - 형변환, String 메서드, Array 메서드
 categories:
-- javascript
+- Javascript
 toc: true
 ---
 
