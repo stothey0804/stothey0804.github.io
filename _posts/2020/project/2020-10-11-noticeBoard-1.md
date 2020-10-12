@@ -27,7 +27,7 @@ toc: true
 
 *조건이 거의 없어서 쉽고 빨리 만들 수 있고 ... 무엇보다 블로그에 내용정리하기도 간편하다.*😅
 
-- - -
+
 
 ## 작업 진행계획
 
@@ -64,7 +64,7 @@ toc: true
 
 #### 테이블 구성
 
-![DB컬럼]]({{ site.url }}{{ site.baseurl }}/assets/images/2020-10-11-noticeBoard-1/db-entity.png)
+![DB컬럼]({{ site.url }}{{ site.baseurl }}/assets/images/2020-10-11-noticeBoard-1/db-entity.png)
 > notice 테이블 구성
 
 
