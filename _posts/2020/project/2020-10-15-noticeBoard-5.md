@@ -1,7 +1,7 @@
 ---
 title: \[Spring] ckeditor를 사용한 간단한 공지게시판 만들기 - (5)페이징
 tags:
-[Spring,Pagination]
+- Spring, Pagination
 categories:
 - project
 toc: true
@@ -42,7 +42,7 @@ notice 게시판은 검색조건이 없어 총 게시글 조회 쿼리가 엄청
 
 #### Controller
 
-1. `listCnt` 값 할당
+##### 1. `listCnt` 값 할당
 
 위에서 작성한 selectNoticeListCnt 쿼리를 DAO의 selectNoticeListCnt 메서드에 연결한 뒤,
 컨트롤러의 조회 메서드 안에서 실행시킨다.
@@ -54,7 +54,7 @@ int listCnt = rootP003_d001Service.selectNoticeListCnt();	// 전체 게시글 �
 이렇게 저장된 `listCnt` 변수는 Pagination 객체 생성시 사용한다.
 
 
-2. `curPage` 값 할당
+##### 2. `curPage` 값 할당
 
 `curPage`는 view에서 페이지 번호를 클릭했을 때 들어오는 값이다.
 RequestParam 애너테이션을 통해 받아주면 된다.
