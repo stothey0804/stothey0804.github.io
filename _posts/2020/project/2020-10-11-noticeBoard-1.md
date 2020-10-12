@@ -48,7 +48,7 @@ toc: true
 ![공지사항리스트]({{ site.url }}{{ site.baseurl }}/assets/images/2020-10-11-noticeBoard-1/proto-list.png)
 > 공지사항 조회 화면
 
-![공지사항클릭시]({{ site.url }}{{ site.baseurl }}/assets/images/2020-10-11-noticeBoard-1/proto-list-2.png)
+![공지사항클릭시]({{ site.url }}{{ site.baseurl }}/assets/images/2020-10-11-noticeBoard-1/proto-list2.png)
 > 클릭시 토글 화면
 
 어드민 기준으로 만들었지만, 리스트 조회부분은 tiles 레이아웃만 다르지 내용은 같다.
