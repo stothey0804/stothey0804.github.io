@@ -1,5 +1,5 @@
 ---
-title: \[Spring]ckeditor를 사용한 간단한 공지게시판 만들기-(1)작업계획
+title: \[Spring] ckeditor를 사용한 간단한 공지게시판 만들기 - (1)작업계획
 tags:
 - Spring
 categories:
