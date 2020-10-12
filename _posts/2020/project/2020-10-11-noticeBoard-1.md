@@ -64,7 +64,7 @@ toc: true
 
 #### 테이블 구성
 
-![DB컬럼]({{ site.url }}{{ site.baseurl }}/assets/images/2020-10-11-noticeBoard-1/db-entity.png)
+![DB컬럼]({{ site.url }}{{ site.baseurl }}/assets/images/2020-10-11-noticeBoard-1/db-entity.PNG)
 > notice 테이블 구성
 
 
