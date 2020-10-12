@@ -23,7 +23,7 @@ https://gangnam-americano.tistory.com/18
 
 ## 1. 총 페이지 수 구하기
 
-#### QUERY
+### QUERY
 
 ```html
 
@@ -40,9 +40,9 @@ https://gangnam-americano.tistory.com/18
 notice 게시판은 검색조건이 없어 총 게시글 조회 쿼리가 엄청나게 간단하다. COUNT(PK)로 조회하면 끝이다.
 
 
-#### Controller
+### Controller
 
-##### 1. `listCnt` 값 할당
+#### 1. `listCnt` 값 할당
 
 위에서 작성한 selectNoticeListCnt 쿼리를 DAO의 selectNoticeListCnt 메서드에 연결한 뒤,
 컨트롤러의 조회 메서드 안에서 실행시킨다.
@@ -54,7 +54,7 @@ int listCnt = rootP003_d001Service.selectNoticeListCnt();	// 전체 게시글 �
 이렇게 저장된 `listCnt` 변수는 Pagination 객체 생성시 사용한다.
 
 
-##### 2. `curPage` 값 할당
+#### 2. `curPage` 값 할당
 
 `curPage`는 view에서 페이지 번호를 클릭했을 때 들어오는 값이다.
 RequestParam 애너테이션을 통해 받아주면 된다.
@@ -82,7 +82,7 @@ public ModelAndView searchNotice(@RequestParam(defaultValue = "1") int curPage, 
 
 ## 3. startIndex, EndIndex 설정
 
-#### QUERY
+### QUERY
 
 다음은 공지사항 리스트를 조회하는 쿼리다.
 
@@ -106,7 +106,7 @@ resultMap은 notice 테이블과 대응하는 vo이며, 파라미터 타입은 �
 페이징을 하게되면 시작 인덱스 - 끝 인덱스 기준으로 조회해야하므로 startIndex와 endIndex를 받아야한다.
 
 
-#### Controller
+### Controller
 
 ```java
 // 조회용 Parameter 생성
@@ -123,7 +123,7 @@ startIndex와 endIndex의 값은 생성한 `pagination` 인스턴스로 얻어�
 
 ## 4. View 설정
 
-#### Controller
+### Controller
 
 ```java
 mav.addObject("pagination", pagination);	//페이지네이션
@@ -133,7 +133,7 @@ mav.addObject("articleList",list);			//글목록
 그렇게 생성한 `pagination`과 `list`는 ModelAndView 인스턴스에 addObject() 하여
 view로 전달해준다.
 
-#### View
+### View
 
 articleList 관련 태그는 생략하고 Pagination 부분만 첨부한다.
 부트스트랩 문서에 Pagination 항목을 참고하여 작성했다.
@@ -184,7 +184,7 @@ articleList 관련 태그는 생략하고 Pagination 부분만 첨부한다.
 <!-- 페이징 END -->
 ```
 
-#### 결과 확인
+## 결과 확인
 
 ![결과화면]({{ site.url }}{{ site.baseurl }}/assets/images/2020-10-11-noticeBoard-5/result.PNG)
 > 결과 화면
