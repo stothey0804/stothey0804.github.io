@@ -83,11 +83,11 @@ HTML의 element는 DOM Tree로 저장된다. 이 DOM Tree를 쉽게 탐색할 �
 <img src="https://www.w3schools.com/js/pic_htmltree.gif">
 
 * Node : DOM Tree는 Node의 집합이다.
-1. 요소 노드
-  - <body>, <p>와 같은 태그 요소
-2. 텍스트 노드
+1. 요소 노드 Element
+  - ``<body>``, ``<p>`` 와 같은 태그 요소
+2. 텍스트 노드 Text
   - 노드 안의 text 부분
-3. 속성 노드
+3. 속성 노드 Attribute
   - 요소태그의 속성 부분
 4. comment 노드 (주석)
 
@@ -100,3 +100,50 @@ HTML의 element는 DOM Tree로 저장된다. 이 DOM Tree를 쉽게 탐색할 �
 
 > W3School - HTML DOM
 > : <https://www.w3schools.com/js/js_htmldom.asp>
+
+### DOM 기초 예제
+
+**HTML**
+
+```html
+<body>
+<input type="button" value="Change this document." onclick="change()">
+<h2>Header</h2>
+<p>Paragraph</p>
+</body>
+```
+
+**Javascript**
+
+```javascript
+ function change() {
+    // document.getElementsByTagName("H2") 는 <h2> 엘리먼트의
+    // NodeList를 반환(return)합니다. 0부터 시작합니다.
+    
+    var header = document.getElementsByTagName("H2").item(0);
+    // 헤더의 첫번째 자식 노드는 Text 노드입니다.
+    header.firstChild.data = "A dynamic document";
+    // 이제 헤더는 "A dynamic document"가 되었습니다.
+    
+    var para = document.getElementsByTagName("P").item(0);
+    para.firstChild.data = "This is the first paragraph.";
+    
+    // 두번째 문단을 만들기 위한 새로운 Text 노드를 만들었습니다. 
+    var newText = document.createTextNode("This is the second paragraph.");
+    // 두번째 문단을 만들기 위한 새로운 p 엘리먼트를 만들었습니다.
+    var newElement = document.createElement("P");
+    // 새로운 p 엘리먼트에 텍스트를 넣어 문단을 만듭니다.
+    newElement.appendChild(newText);
+    // 생성한 문단을 HTML 문서 마지막에 넣기 위해
+    // (para의 부모인) HTML BODY에 append합니다.
+    para.parentNode.appendChild(newElement);
+  }
+```
+
+### Element
+
+
+### Event Object
+
+
+https://www.w3schools.com/jsref/default.asp
