@@ -11,6 +11,8 @@ toc: true
 세션 트래킹에 관련하여 간단하게 정리하려고한다.
 
 
+
+
 # 세션 트래킹이란?
 
 HTTP 프로토콜은 서버-클라이언트 통신시 stateless 방식으로 통신하기 때문에
@@ -36,6 +38,8 @@ HTTP 프로토콜은 서버-클라이언트 통신시 stateless 방식으로 통
 * 쿠키 : 클라이언트PC 쿠키파일에 정보 저장 - 웹사이트 내 서비스 (도메인)
 
 * 세션 : 서버 메모리에 정보를 저장한 후 공유 - 한 브라우저가 접근하는 서비스 
+
+- - -
 
 
 # 쿠키 API
@@ -93,6 +97,9 @@ public String method(@CookieValue(value="cookieTest", defaultValue="1", required
 
 **required가 true**일 경우, 쿠키가 없을 시 java.lang.IllegalStateException가 발생한다고 한다.
 따라서 **defaultValue**를 설정하거나, required=**false**로 설정하는 것이 좋다.
+
+
+- - -
 
 
 # 세션 API
