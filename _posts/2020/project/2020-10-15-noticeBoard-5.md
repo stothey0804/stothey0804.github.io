@@ -13,7 +13,7 @@ toc: true
 잘 정리된 블로그를 참조하여 프로젝트에 적용시켰다.
 
 참고 블로그🔗
-https://gangnam-americano.tistory.com/18
+<a href="https://gangnam-americano.tistory.com/18">https://gangnam-americano.tistory.com/18</a>
 > Dev.Project / [spring/게시판] #6 게시판 페이징 처리하기
 
 (정말 감사합니다.)
