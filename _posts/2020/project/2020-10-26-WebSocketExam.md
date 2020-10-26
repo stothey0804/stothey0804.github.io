@@ -25,7 +25,7 @@ categories:
 ```
 
 
-### Handler
+## Handler
 
 #### servlet-context.xml 설정
 
@@ -39,6 +39,7 @@ categories:
     <websocket:sockjs />
 </websocket:handlers>
 ```
+
 
 servlet-context에 `TextWebSocketHandler`를 상속받은 EchoHandler를 의존성 주입한다.
 
@@ -128,7 +129,7 @@ public class EchoHandler extends TextWebSocketHandler{
 
 
 
-### View
+## View
 
 프로젝트 페이지 레이아웃에서 공통적으로 사용하는 header.jsp 파일 javascript 영역에 웹 소켓을 연결시킨다.
 
@@ -206,11 +207,12 @@ $('#notifySendBtn').click(function(e){
 
 ```
 
-![메시지전송]]({{ site.url }}{{ site.baseurl }}/assets/images/2020-10-26-WebSocketExam/image.PNG)
+
+![메시지전송]({{ site.url }}{{ site.baseurl }}/assets/images/2020-10-26-WebSocketExam/image.PNG)
 > 메시지 전송시
 
 
-![메시지수신]]({{ site.url }}{{ site.baseurl }}/assets/images/2020-10-26-WebSocketExam/image2.PNG)
+![메시지수신]({{ site.url }}{{ site.baseurl }}/assets/images/2020-10-26-WebSocketExam/image2.PNG)
 > 메시지 수신시
 
 
