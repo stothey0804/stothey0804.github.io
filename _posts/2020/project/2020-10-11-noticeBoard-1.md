@@ -5,6 +5,7 @@ tags:
 categories:
 - project
 toc: true
+toc_sticky: true
 ---
 
 비전공자 취준생의 입장에서, 모자라지만 스스로 (+구글링을 통해) 터득한 것들을 상세하게 정리해본다.

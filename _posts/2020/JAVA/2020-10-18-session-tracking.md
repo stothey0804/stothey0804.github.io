@@ -5,6 +5,7 @@ tags:
 categories:
 - JAVA
 toc: true
+toc_sticky: true
 ---
 
 프로젝트를 진행하다가 한번 정리해야할 것 같아서
