@@ -5,8 +5,9 @@ permalink: /project/
 ---
 
 <div class="container text-center mt-5">
-    <p class="text-primary mb-1" style="font-size:3em !important">&amp;분의일</p>
-    <p>함께하는 지역공동체 서비스</p>
+    <p class="font-weight-bold text-primary mb-1" style="font-size:3em !important">&amp;분의일</p>
+    <p class="font-weight-bold">함께하는 지역공동체 서비스</p>
+    <p>2020.09 ~ 2020.11</p>
 </div>
 <!-- Swiper -->
 <div class="container">
