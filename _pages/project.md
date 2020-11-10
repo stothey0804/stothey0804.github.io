@@ -4,8 +4,10 @@ layout: splash
 permalink: /project/
 ---
 
-<div class="">
-
+<div class="text-center">
+    <p class="h1 text-primary">&amp;분의일</p>
+    <p>함께하는 지역공동체 서비스</p>
+</div>
 <!-- Swiper -->
 <div class="swiper-container">
     <div class="swiper-wrapper">
@@ -29,4 +31,3 @@ permalink: /project/
     },
     });
 </script>
-</div>
