@@ -1,5 +1,7 @@
 ---
 permalink: /about/
 title: "About"
-layout: single
+layout: splash
 ---
+
+a
