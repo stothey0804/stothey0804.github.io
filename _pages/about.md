@@ -4,25 +4,32 @@ title: "About"
 layout: splash
 ---
 
+<br><br><br><br>
+
 # Full-stack Developer
 # 김세영
 
+<br>
+
 > ADSL이 보급되던 때부터 컴퓨터와 인터넷에 관심이 많아 홈페이지 제작 프로그램을 이용해 개인 홈페이지를 만들기도 하고, 어린 나이에 기능사 자격증을 따기도 했습니다. 예전부터 있던 흥미와 얕게 배웠던 경험을 통해 조금 돌아왔지만 프로그래밍이 적성에 맞다는 확신을 느껴 웹 개발자로 커리어 전환을 준비하고 있습니다.
+
+<br><br><br>
 
 ## 📞 Contact
 
-📧 **Email**   stothey0804@gmail.com
-<i class="fab fa-github"></i> **Github**  github.com/stothey0804
+<br>
+📧 **Email**   stothey0804@gmail.com<br>
+<i class="fab fa-github"></i> **Github**  github.com/stothey0804<br>
 
-- - - 
+<br><br>
 
 ## 💻 Skills
 
-📖 **Languege**    JAVA, JavaScript, CSS, HTML
-🔨 **Framework**   Spring
-🧠 **Knowledge**   Oracle SQL, AWS EC2/RDS
+📖 **Languege**    JAVA, JavaScript, CSS, HTML<br>
+🔨 **Framework**   Spring<br>
+🧠 **Knowledge**   Oracle SQL, AWS EC2/RDS<br>
 
-
+<br><br>
 
 ## 🎓 Education
 
@@ -34,16 +41,16 @@ layout: splash
 숙명여자대학교 
 2009.03 - 2016.02
 
-
+<br><br>
 
 ## 💡 Project
 
 ##### &분의일
-2020.09 - 2020.11.
+2020.09 - 2020.11.<br>
 🔗 <a href="http://stothey0804.github.io/project">프로젝트 페이지</a>
-
+<br>
 > &분의일은 함께하는 지역공동체 서비스를 컨셉으로, 현재 위치를 기반으로 한 단기성 활동에 참여를 주 기능으로 하며 커뮤니티 서비스인 소모임 기능과 인근 업체의 리뷰를 등록하고 조회하고 지역업주로 개별 가입해 관리하는 지역업체 기능을 제공합니다.
-
+<br>
 _Full-stack Developer, 팀장._
 
 - 회원 기능 전체(가입,문의,신고,평가) CRUD
