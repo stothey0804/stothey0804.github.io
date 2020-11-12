@@ -5,7 +5,7 @@ permalink: /project/
 ---
 
 <div class="container text-center mt-5">
-    <p class="font-weight-bold text-primary mb-1" style="font-size:3em !important">&amp;분의일</p>
+    <p class="text-primary mb-1" style="font-size:3em !important">&amp;분의일</p>
     <p class="font-weight-bold">함께하는 지역공동체 서비스</p>
     <p>2020.09 ~ 2020.11</p>
 </div>
@@ -34,3 +34,26 @@ permalink: /project/
     });
 </script>
 </div>
+
+> &분의일은 함께하는 지역공동체 서비스를 컨셉으로, 현재 위치를 기반으로 한 단기성 활동에 참여를 주 기능으로 하며 커뮤니티 서비스인 소모임 기능과 인근 업체의 리뷰를 등록하고 조회하고 지역업주로 개별 가입해 관리하는 지역업체 기능을 제공합니다.
+
+## 사용기술
+
+<img src="../assets/images/project/stack.png">
+
+
+## 담당역할
+
+_Full-stack Developer, 팀장._
+
+- 회원 기능 전체(가입,문의,신고,평가) CRUD
+- 비밀번호 찾기를 위한 메일발송과, 회원인증을 위한 SMS전송 구현.
+- 웹소켓을 이용한 알림 기능을 구현했습니다.
+- 간편결제 API를 이용한 포인트 충전기능을 구현했습니다.
+- 맵 API를 이용하여 위치정보를 사용하기 위한 공통 js파일을 작성했습니다.
+- 공통 기능을 수행하는 Common Class를 작성했습니다.
+- chart js를 통해 쿼리로 조회한 통계정보를 시각화했습니다.
+- 부트스트랩을 이용하여 CSS 마무리 작업을 했습니다.
+
+
+## 시연동영상
