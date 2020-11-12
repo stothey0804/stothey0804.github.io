@@ -37,6 +37,7 @@ permalink: /project/
 <br><br>
 
 > &분의일은 함께하는 지역공동체 서비스를 컨셉으로, 현재 위치를 기반으로 한 단기성 활동에 참여를 주 기능으로 하며 커뮤니티 서비스인 소모임 기능과 인근 업체의 리뷰를 등록하고 조회하고 지역업주로 개별 가입해 관리하는 지역업체 기능을 제공합니다.
+
 <br><br>
 
 ### 사용기술
@@ -61,3 +62,11 @@ _Full-stack Developer, 팀장._
 <br><br>
 
 ### 시연동영상
+
+<iframe src="https://player.vimeo.com/video/478288917" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+<iframe src="https://player.vimeo.com/video/478288811" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+<iframe src="https://player.vimeo.com/video/478288848" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+<iframe src="https://player.vimeo.com/video/478288932" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
