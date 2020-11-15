@@ -11,12 +11,11 @@ layout: splash
 
 <br>
 
-> ADSL이 보급되던 때부터 컴퓨터와 인터넷에 관심이 많아 홈페이지 제작 프로그램을 이용해 개인 홈페이지를 만들기도 하고, 어린 나이에 기능사 자격증을 따기도 했습니다. 예전부터 있던 흥미와 얕게 배웠던 경험을 통해 조금 돌아왔지만 프로그래밍이 적성에 맞다는 확신을 느껴 웹 개발자로 커리어 전환을 준비하고 있습니다.
+> 소크라테스는 “음미되지 않은 삶은 살 가치가 없다.” 라고 했습니다. 음미한다는 것은 삶에 질문을 던진다는 뜻이고, 저에게 있어 음미한다란 새로운 것을 배우는 일 입니다. 지난 수년간 온라인 MD로 일했습니다. 재직 중 자사몰 관련으로 간단한 코딩작업이 빈번하게 필요해 직장인 대상 교육을 통해 웹 표준 관련 공부를 했습니다. 실제로 자사 쇼핑몰에 직접 작성한 코드를 적용해보니, IT 분야를 더 음미하고 싶다는 열망을 느껴 웹 개발자로 커리어 전환을 준비하고 있습니다.
 
 <br><br>
 
 ## 📞 Contact
-
 <br>
 📧 **Email**   stothey0804@gmail.com<br>
 <i class="fab fa-github"></i> **Github**  github.com/stothey0804<br>
@@ -24,7 +23,7 @@ layout: splash
 <br><br>
 
 ## 💻 Skills
-
+<br>
 📖 **Languege**    JAVA, JavaScript, CSS, HTML<br>
 🔨 **Framework**   Spring<br>
 🧠 **Knowledge**   Oracle SQL, AWS EC2/RDS<br>
@@ -32,7 +31,7 @@ layout: splash
 <br><br>
 
 ## 🎓 Education
-
+<br>
 ##### JAVA 풀스택 웹개발 과정 168기
 비트캠프
 2020.06 - 2020.11.
