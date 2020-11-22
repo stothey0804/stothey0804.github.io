@@ -1,7 +1,7 @@
 ---
 title: JAVA - Collection Framework
 categories:
-- JAVA
+- Java
 toc: true
 ---
 

@@ -3,7 +3,7 @@ title: \[Spring/Servlet] 세션 트래킹 - 쿠키/세션 사용하기
 tags:
 - Servlet
 categories:
-- JAVA
+- Java
 toc: true
 toc_sticky: true
 ---
