@@ -35,9 +35,9 @@ function third(){
 first();
 ```
 
-> 실행결과 :
-> 3
-> 2
+> 실행결과 :<br>
+> 3<br>
+> 2<br>
 > 1
 
 <img src="/assets/images/javascript/callback.png">
@@ -55,9 +55,9 @@ setTimeout(run,3000);
 console.log('끝');
 ```
 
-> 실행결과 :
-> 시작
-> 끝
+> 실행결과 :<br>
+> 시작<br>
+> 끝<br>
 > 3초 후 실행
 
 `setTimeout()`의 경우 특정 시간 이후 코드를 실행하므로 run()은 나중에 실행된다.
