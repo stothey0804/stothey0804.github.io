@@ -40,7 +40,7 @@ first();
 > 2<br>
 > 1
 
-<img src="/assets/images/javascript/callback.png">
+<img src="/_site/assets/images/javascript/callback.png">
 
 
 함수 호출 부분을 만나면 호출한 함수를 호출 스택에 넣고, 역순으로 실행합니다 (Stack의 후입선출 구조)
