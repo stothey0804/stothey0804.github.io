@@ -30,5 +30,6 @@ JS는 인터프리터 언어인 반면 TS는 컴파일 언어로 코드 수준�
 ## TypeScript 사용하기
 
 🔗<a href="https://typescript-kr.github.io/">TS-Handbook 한글문서</a>
+<br>
 🔗<a href="https://codesandbox.io/s/vanilla-ts">샌드박스</a>
 
