@@ -39,7 +39,7 @@ var printName = function() {
 (호이스팅 항목 참조)
 
 
-IIFE (Immediately Invoked Function Expression)
+**IIFE (Immediately Invoked Function Expression)**
 
 ```js
 (function () {

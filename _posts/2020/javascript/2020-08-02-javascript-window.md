@@ -5,7 +5,7 @@ categories:
 toc: true
 ---
 
-## Browser Object
+## 1. Browser Object
 
 브라우저에는 브라우저 객체가 내장되어있는데 브라우저 객체의 계층적 구조를 BOM(Browser Object Model)이라 하며, 그중 가장 최상위 객체가 window 객체다.
 
@@ -75,7 +75,7 @@ console.log("end");
 
 
 
-## HTML DOM (Document Object Model)
+## 2. HTML DOM (Document Object Model)
 
 HTML의 element는 DOM Tree로 저장된다. 이 DOM Tree를 쉽게 탐색할 수 있도록 브라우저에서 제공하는 메서드가 DOM API다.
 스크립트를 사용해 동적으로 접근하여 문서의 내용/구조/스타일을 변경할 수 있다.
@@ -101,7 +101,7 @@ HTML의 element는 DOM Tree로 저장된다. 이 DOM Tree를 쉽게 탐색할 �
 > W3School - HTML DOM
 > : <https://www.w3schools.com/js/js_htmldom.asp>
 
-### DOM 기초 예제
+### 2.1. DOM 기초 예제
 
 **HTML**
 
@@ -140,10 +140,51 @@ HTML의 element는 DOM Tree로 저장된다. 이 DOM Tree를 쉽게 탐색할 �
   }
 ```
 
-### Element
+### 2.2. Element Object
+
+HTML DOM에서 엘리먼트 객체란, `p`, `div`, `a` 등의 HTML 엘리먼트를 말한다.
+
+#### Element의 속성과 메서드
+
+🔗<a href="https://www.w3schools.com/jsref/dom_obj_all.asp">W3School 참고</a>
+
+|속성/메서드|설명|
+|---|---|
+|`getElementById()`|ID를 통해 특정 요소노드의 Object를 리턴한다.|
+|`getElementsByTagName()`|특정 태그를 사용하는 요소노드들을 배열로 리턴.|
+|`getElementsByClassName()`|특정 클래스의 요소노드들을 배열로 리턴.|
+|`getAttribute()`|`getElement...`를 통해 얻은 요소노드의 속성값을 얻기 위해 사용.|
+|`setAttribute()`|얻은 요소의 속성값을 변경. ex)`item.setAttribute('title','a list of goods');`|
+||
+
+`childNodes`
+
+`nodeType`
+
+`nodeValue`
+
+`nodeName`
+
+`firstChild`
+
+`lastChild`
+
+`parentNode`
+
+`firstElementChild`
+
+`lastElementChild`
+
+`nextSibling`
+
+`nextElementSibling`
+
+`previousSibiling`
+
+`previousElementSibiling`
 
 
-### Event Object
+### 2.3. Event Object
 
 
 https://www.w3schools.com/jsref/default.asp
