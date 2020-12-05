@@ -125,7 +125,7 @@ HTML의 element는 DOM Tree로 저장된다. 이 DOM Tree를 쉽게 탐색할 �
     header.firstChild.data = "A dynamic document";
     // 이제 헤더는 "A dynamic document"가 되었습니다.
     
-    var para = document.getElementsByTagName("P").item(0);
+    var para = document.getElementsByTagName("p").item(0);
     para.firstChild.data = "This is the first paragraph.";
     
     // 두번째 문단을 만들기 위한 새로운 Text 노드를 만들었습니다. 
