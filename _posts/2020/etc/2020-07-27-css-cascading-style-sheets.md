@@ -3,7 +3,7 @@ title: CSS - 개념, 선택자
 tags:
 - css
 categories:
-- etc
+- FE
 toc: true
 ---
 CSS (Cascading Style Sheets)란, 브라우저에서 웹페이지의 외형을 결정하는 선언형 언어로, 선택한 요소에 CSS 스타일 선언을 적용해 화면에 표현한다. CSS는 보통 HTML 요소의 스타일을 결정하지만, SVG와 XML 등 다른 마크업 언어에도 사용할 수 있다. 하나의 CSS 규칙은 선택자에 연결된 속성과 값 세트로 구성된다.
@@ -389,3 +389,4 @@ width, height, margin, padding, border, box-sizing, display, background,
 vertical-align, text-decoration, position, top, right, bottom, left,
 z-index, overflow, float
 ```
+ 
