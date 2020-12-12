@@ -1,5 +1,5 @@
 ---
-title: \[rails] 레일즈 구조 파해치기
+title: \[rails] 레일즈 구조 파헤치기
 categories:
 - Ruby on rails
 tags:
