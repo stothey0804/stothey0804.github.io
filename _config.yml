@@ -20,7 +20,7 @@ locale                   : "ko
 title                    : "Hello Web!"
 title_separator          : "/"
 subtitle                 : # site tagline that appears below site title in masthead
-name                     : "SYKIM"
+name                     : "dev.choco"
 description              : "Full-Stack 웹 개발을 공부합니다. "
 url                      : "https://stothey0804.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
@@ -94,7 +94,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "SYKIM"
+  name             : "dev.choco"
   avatar           : "/assets/images/bio-photo.jpg"
   bio              : "Full-stack 웹 개발을 공부합니다."
   location         : "KR (Republic of)"
