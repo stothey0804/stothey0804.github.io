@@ -1,11 +1,4 @@
-<<<<<<< HEAD
 User-agent: *
 Allow: /
 
 Sitemap: https://stothey0804.github.io/sitemap.xml
-=======
-User-agent: *
-Allow: /
-
-Sitemap: https://stothey0804.github.io/sitemap.xml
->>>>>>> a937bcd5bda086a5cff6b5e97a82ecae4ebcc3f8
