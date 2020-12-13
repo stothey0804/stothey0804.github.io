@@ -38,12 +38,12 @@ toc: true
 
 - - -
 
-### 정리
+
 
 https://github.com/pureugong/rails-style-guide/blob/master/README-koKR.md
 
 
-#### * 설정(configuration)
+### 1. 설정(configuration)
 
 설정부분은 `config/` 폴더 아래에 위치한다.
 
@@ -51,7 +51,7 @@ https://github.com/pureugong/rails-style-guide/blob/master/README-koKR.md
 모든 환경에 적용되는 설정은 `application.rb`파일에 있다. 터미널에서 `bundle rails s thin` 명령어를 통해 레일즈 서버를 실행하면 이 appllication.rb 파일을 읽어들인다.
 
 
-#### * 라우팅(Routing) ⭐️
+#### 1.1. 라우팅(Routing) ⭐️
 
 레일즈 라우터는 자바의 `@RequestMapping`와 같이, 인식된 URL 을 통해 컨트롤러의 작업에 보내는 역할을 한다.
 `config/routes.rb`에 라우팅 규칙을 설정하면 된다.
@@ -68,7 +68,9 @@ end
 ```
 예시 코드는 root 액션을 home 컨트롤러의 index 액션과 연결 된다. (http://localhost:3000/)
 
-`match` : URL을 컨트롤러와 액션에 연결시킨다.
+##### 1.1.1. URL에서 코드 연결
+
+* `match` : URL을 컨트롤러와 액션에 연결시킨다. - 단일 연결
 
 ```
 GET /patients/17
@@ -79,10 +81,83 @@ match "/patients/:id" => "patients#show"
 ```
 
 이 요청은 partients 컨트롤러의 show 액션 에 {:id => 17} 파라미터와 함께 디스패치 된다.
-참으로 직관적이다. 레일즈에 막 호감이 생긴다. 
+참으로 직관적이다. 
 
-`resource` :
+- - -
 
+* `resource` : 리소스에 해당하는 모든 메서드를 컨트롤러에 연결시킨다. 
+
+`:only => [:index, ...]` 을 사용하여 메서드를 한정할 수 있다!
+
+```ruby
+resources :subscriptions do
+  member do
+    get 'unsubscribe'
+    # more routes
+  end
+end
+
+resources :photos do
+  collection do
+    get 'search'
+    # more routes
+  end
+end
+```
+
+member
+
+collection
+
+
+- - -
+
+##### 1.1.2. 코드에서 경로 생성
+
+```ruby
+@patient = Patient.find(17)
+```
+```ruby
+<%= link_to "Patient Record", patient_path(@patient) %>
+```
+
+위 코드는 `/patients/17` 경로를 생성한다.
+
+
+##### 1.1.3. CRUD, 요청 메서드와 Action
+
+레일즈에서 resourceful 라우트는 HTTP 요청 메서드와 URL과 컨트롤러 액션 사이의 매핑을 재공한다.
+각 동작은 데이터베이스의 CRUD 동작에도 매핑된다. 다음에 대하여
+
+```ruby
+resources :photos
+```
+
+|HTTP Verb|Path|action|used for|
+|---|---|---|---|
+|GET|/photos|index|모든 사진을 표시|
+|GET|/photos/new|new|새 사진을 생성하기 위한 폼|
+|POST|/photos|create|새 사진 생성|
+|GET|/photos/:id|show|개별 사진 조회|
+|GET|/photos/:id/edit|edit|개별 사진을 수정하는 폼|
+|PUT|/photos/:id|update|개별 사진 수정|
+|DELETE|/photos/:id|destroy|개별 사진 삭제|
+
+Photos 컨트롤러에 매핑되는 동작들은 위와 같다.
+
+##### 1.1.4. Path와 URLs
+
+resourceful 경로를 사용하면, 컨트롤러에 다음과 같은 helper를 사용할 수 있다.
+
+|helper|return URL|
+|---|---|
+|photos_path|returns /photos|
+|new_photo_path|returns /photos/new|
+|edit_photo_path(id)|returns /photos/:id/edit (for instance, edit_photo_path(10) returns /photos/10/edit)|
+|photo_path(id)|returns /photos/:id (for instance, photo_path(10) returns /photos/10)|
+
+
+🔗 <a href="http://rubykr.github.io/rails_guides/routing.html">Rails Routing from the Outside In</a><br>
 
 
 ```
@@ -91,28 +166,20 @@ match "/patients/:id" => "patients#show"
 ```ruby
 ```
 
+### 2. 어플리케이션(Application)
 
-
-
-
-http://rubykr.github.io/rails_guides/routing.html
-
-#### * 컨트롤러(Controllers)
-
-
+#### 2.1. 컨트롤러(Controllers)
 
 ##### 랜더링(Rendering)
 
-#### * 모델(Models) ⭐️
+#### 2.3. 모델(Models) ⭐️
 
-##### 엑티브 레코드(ActiveRecord)
+#### 2.4. 뷰(Views)
 
-##### 엑티브 레코드 쿼리(ActiveRecord Queries)
+https://rubykr.github.io/rails_guides/association_basics.html
 
-#### * 마이그레이션(Migrations)
 
-#### * 뷰(Views)
+### 3. 마이그레이션(Migrations)
 
-#### * 에셋(Assets)
 
-#### 번들러(Bundler)
+### 4. 번들러(Bundler)
