@@ -107,8 +107,13 @@ end
 
 member
 
+:id를 낌
+
 collection
 
+안낌
+
+https://medium.com/@tadhao/member-vs-collection-in-rails-routes-ade10c8c5d19
 
 - - -
 
