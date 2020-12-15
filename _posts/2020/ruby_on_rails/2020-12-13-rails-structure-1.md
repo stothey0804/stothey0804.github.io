@@ -175,7 +175,97 @@ resourceful 경로를 사용하면, 컨트롤러에 다음과 같은 helper를 �
 
 #### 2.1. 컨트롤러(Controllers)
 
-##### 랜더링(Rendering)
+##### 2.1.1. 랜더링(Rendering)
+
+컨트롤러 관점에서 HTTP 응답을 생성하는 방법 3가지
+
+* `render`를 호출하여 브라우저에 보낼 전체 response 생성
+* `redirect_to`호출하여 브라우저에 HTTP 리디렉션 상태코드 전송
+*  `head`를 호출하여 브라우저에 HTTP 헤더로만 구성된 response 생성
+
+
+###### 2.1.1.1. 디폴트 렌더링
+
+<a href="https://stothey0804.github.io/ruby%20on%20rails/rails-1/">ruby on rails 입문</a> 포스트에서 레일즈의 개발철학에는 __Convention Over Configuration(설정보다 관습)__이 있다고 했다. 디폴트 렌더링이 바로 그 예이다.
+
+레일즈 컨트롤러는 유효한 경로에 해당하는 이름으로 뷰를 자동으로 렌더링한다. 
+
+```ruby
+class BooksController < ApplicationController
+end
+```
+
+`BooksController`에 위 코드가 있고, 아래 처럼 라우팅 되어있으며 뷰 폴더 경로에 파일이 존재할 때
+
+**config/routes.rb**
+```ruby
+resources :books
+```
+
+**app/views/books/index.html.erb**
+```html
+<h1>Books are coming soon!</h1>
+```
+
+ `/books` 경로로 접속하면 **Books are coming soon!** 이 출력되는 화면을 볼 수 있다.
+
+이제 실제로 모델을 생성하여 `index`액션에 추가하려면 다음과 같이 코드를 추가한다.
+
+```ruby
+class BooksController < ApplicationController
+  def index
+    @books = Book.all
+  end
+end
+```
+
+index 액션이 끝날때까지 명시적으로 렌더링하지 않으면 레일즈가 컨트롤러의 뷰 경로에서 `action_name.html.erb`를 자동으로 찾아 렌더링 한다.
+위 코드의 경우 `/app/views/books/index.html.erb` 파일을 렌더링 하게 된다.
+
+
+###### 2.1.1.2. 렌더링 사용하기
+
+**렌더링 하지 않기**
+
+```ruby
+render :nothing => true
+```
+```
+HTTP/1.1 200 OK
+Connection: close
+Date: Sun, 24 Jan 2010 09:25:18 GMT
+Transfer-Encoding: chunked
+Content-Type: */*; charset=utf-8
+X-Runtime: 0.014297
+Set-Cookie: _blog_session=...snip...; path=/; HttpOnly
+Cache-Control: no-cache
+```
+
+`/books` 에 대한 응답은 위와 같다.
+위와 같이 렌더링 하지 않는 방법은 ajax 요청에 유용할 수 있다고 한다.
+
+
+**액션 뷰 렌더링**
+
+```ruby
+def update
+  @book = Book.find(params[:id])
+  if @book.update_attributes(params[:book])
+    redirect_to(@book)
+  else
+    render "edit"
+  end
+end
+```
+
+동일 템플릿 내에서 다른 작업에 해당하는 뷰를 렌더링하려면 `render`를 사용한다. 
+
+http://rubykr.github.io/rails_guides/layouts_and_rendering.html
+
+```ruby
+
+```
+
 
 #### 2.3. 모델(Models) ⭐️
 
