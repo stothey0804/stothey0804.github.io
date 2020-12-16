@@ -260,6 +260,46 @@ end
 
 동일 템플릿 내에서 다른 작업에 해당하는 뷰를 렌더링하려면 `render`를 사용한다. 
 
+위 표현은 좀더 명료하게 하기 위해
+
+```ruby
+render :action => "edit"
+```
+
+로 바꾸어 쓸 수 있다.
+
+**다른 컨트롤러의 액션 템플릿 렌더링하기**
+
+* 다른 컨트롤러에서 `app/views/products` 경로에 있는 뷰를 렌더링 할 경우
+
+```ruby
+render 'products/show'
+# 좀 더 명확하게 하려면...
+render :template => 'product/show'
+```
+
+**임의의 파일 렌더링**
+
+어플리케이션 바깥의 뷰를 렌더링할 경우 사용한다. (2개의 레일즈 어플리케이션 끼리 공유함을 가정)
+
+```ruby
+render "/u/apps/warehouse_app/current/app/views/products/show"
+# 좀 더 명확하게...
+render :file =>
+  "/u/apps/warehouse_app/current/app/views/products/show"
+```
+
+`:file` 옵션은 절대경로를 가져오며, 기본적으로 최근 레이아웃을 사용하지 않고 렌더링 된다. 레이아웃을 사용하려면 `:layout => true` 옵션을 사용한다.
+
+
+그외로 `:xml`, `:json`, `:text` 등 옵션이 있는데 이 부분은 레일즈가이드를 참조하면 되겠다.
+
+
+
+```ruby
+```
+
+
 http://rubykr.github.io/rails_guides/layouts_and_rendering.html
 
 ```ruby
