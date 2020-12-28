@@ -295,26 +295,48 @@ render :file =>
 그외로 `:xml`, `:json`, `:text` 등 옵션이 있는데 이 부분은 레일즈가이드를 참조하면 되겠다.
 
 
-
-```ruby
-```
-
-
 http://rubykr.github.io/rails_guides/layouts_and_rendering.html
 
-```ruby
 
+#### 2.3. 뷰(Views)
+
+Rails MVC 패턴에서 최종적인 출력은 ERB(Embedded Ruby)를 사용한다. ERB 탬풀랏은 HTML `<% %>`안에 루비를 삽입한 구조로, 자바의 JSP랑 비슷하다고 생각하면 될 것같다.
+
+루비를 삽입할 수 있는데다가, 뷰 헬퍼를 사용해 데이터베이스에서 추출한 데이터를 기반으로 링크 또는 입력 양식 요소 등을 간단하게 생성할 수 있다는 장점이 있다. `<%= link_to 'Show',book %>`
+
+컨트롤러에서는 템플릿에서 사용할 템플릿 변수를 만들어야하는데, 변수명 앞에 `@`를 붙여 선언하면 된다.
+
+```ruby
+class HelloController < ApllicationController
+...
+  def view
+    # 템플릿 변수
+    @msg = 'Hello World...!'  
+  end
+end
+```
+```html
+<div>
+<%= @msg %>
+<!-- Hello Wolrd...! -->
+</div>
 ```
 
+뷰의 렌더링 방법에 대해서는 상위 항목에 정리되어있다.
 
-#### 2.3. 모델(Models) ⭐️
+#### 2.4. 모델(Models) ⭐️
 
-#### 2.4. 뷰(Views)
 
-https://rubykr.github.io/rails_guides/association_basics.html
 
 
 ### 3. 마이그레이션(Migrations)
 
 
+
 ### 4. 번들러(Bundler)
+
+- 
+
+```ruby
+
+```
