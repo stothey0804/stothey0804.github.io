@@ -2,6 +2,7 @@
 permalink: /about/
 title: "About"
 layout: splash
+published: false
 ---
 
 <br><br><br><br>
